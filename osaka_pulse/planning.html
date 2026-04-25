@@ -117,7 +117,7 @@
 <a class="text-slate-700 hover:text-red-500 transition-all duration-200" href="food.html">Food</a>
 <a class="text-slate-700 hover:text-red-500 transition-all duration-200" href="food.html">Shopping</a>
 <a class="text-red-600 border-b-2 border-red-600 pb-1 font-bold" href="planning.html">Planning</a>
-<a class="text-slate-700 hover:text-red-500 transition-all duration-200" href="planning.html">News</a>
+<a class="text-slate-700 hover:text-red-500 transition-all duration-200" href="news.html">News</a>
 </nav>
 </div>
 <div class="flex items-center gap-6">
@@ -310,6 +310,153 @@
 </div>
 </div>
 </section>
+<!-- Flight Information Section -->
+<section class="py-20 bg-white px-4 md:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">FLIGHTS &amp; ACCESS</span>
+<h2 class="font-headline-xl text-headline-xl">大阪への空路アクセス</h2>
+</div>
+<p class="max-w-md text-slate-600 font-body-lg">
+                        関西国際空港（KIX）は大阪の国際玄関口。アジア各都市からの直行便が充実しています。
+                    </p>
+</div>
+<!-- Airports Info -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+<!-- KIX -->
+<div class="bg-surface-container-low rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="flight_land">flight_land</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">関西国際空港 (KIX)</h3>
+<p class="text-sm text-on-surface-variant">国際線メイン。市内まで約50分</p>
+</div>
+</div>
+<ul class="space-y-3 mb-6">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+特急「はるか」で大阪・天王寺駅まで直結
+</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+空港リムジンバス：市内主要ホテルへ直行
+</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-base" data-icon="check_circle">check_circle</span>
+24時間対応の両替所・ATM完備
+</li>
+</ul>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-bold">台湾便あり</span>
+<span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-bold">韓国便あり</span>
+<span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-bold">香港便あり</span>
+</div>
+</div>
+<!-- ITM -->
+<div class="bg-surface-container-low rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-shadow">
+<div class="flex items-center gap-4 mb-6">
+<div class="w-14 h-14 bg-secondary/10 rounded-2xl flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-3xl" data-icon="connecting_airports">connecting_airports</span>
+</div>
+<div>
+<h3 class="text-xl font-bold text-on-surface">大阪国際空港 (ITM)</h3>
+<p class="text-sm text-on-surface-variant">国内線メイン。市内まで約30分</p>
+</div>
+</div>
+<ul class="space-y-3 mb-6">
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+モノレール「大阪モノレール」で市内へ
+</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+JAL・ANA・スカイマーク等の国内線が発着
+</li>
+<li class="flex items-center gap-3 text-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-secondary text-base" data-icon="check_circle">check_circle</span>
+空港リムジンバスでUSJや梅田へも便利
+</li>
+</ul>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-bold">東京 (60分)</span>
+<span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-bold">札幌 (90分)</span>
+<span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-xs font-bold">福岡 (55分)</span>
+</div>
+</div>
+</div>
+<!-- Popular Routes Table -->
+<div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+<div class="px-8 py-6 bg-primary text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl" data-icon="flight">flight</span>
+<h3 class="font-bold text-xl">主要路線・フライト目安</h3>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-sm">
+<thead>
+<tr class="bg-surface-container-low">
+<th class="px-6 py-4 text-left font-bold text-on-surface-variant uppercase tracking-wider text-xs">出発地</th>
+<th class="px-6 py-4 text-left font-bold text-on-surface-variant uppercase tracking-wider text-xs">到着空港</th>
+<th class="px-6 py-4 text-left font-bold text-on-surface-variant uppercase tracking-wider text-xs">所要時間</th>
+<th class="px-6 py-4 text-left font-bold text-on-surface-variant uppercase tracking-wider text-xs">主要航空会社</th>
+<th class="px-6 py-4 text-left font-bold text-on-surface-variant uppercase tracking-wider text-xs">目安運賃 (TWD)</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-100">
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-6 py-4 font-semibold text-on-surface flex items-center gap-2"><span class="text-lg">🇹🇼</span> 台北 (TPE/TSA)</td>
+<td class="px-6 py-4 text-on-surface-variant">関西国際 (KIX)</td>
+<td class="px-6 py-4 font-semibold text-secondary">約2.5時間</td>
+<td class="px-6 py-4 text-on-surface-variant">JAL、ANA、エバー航空、タイガーエア</td>
+<td class="px-6 py-4 font-bold text-primary">NT$4,000〜</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-6 py-4 font-semibold text-on-surface flex items-center gap-2"><span class="text-lg">🇰🇷</span> ソウル (ICN)</td>
+<td class="px-6 py-4 text-on-surface-variant">関西国際 (KIX)</td>
+<td class="px-6 py-4 font-semibold text-secondary">約1.5時間</td>
+<td class="px-6 py-4 text-on-surface-variant">大韓航空、アシアナ、ジェジュ航空</td>
+<td class="px-6 py-4 font-bold text-primary">NT$3,500〜</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-6 py-4 font-semibold text-on-surface flex items-center gap-2"><span class="text-lg">🇭🇰</span> 香港 (HKG)</td>
+<td class="px-6 py-4 text-on-surface-variant">関西国際 (KIX)</td>
+<td class="px-6 py-4 font-semibold text-secondary">約3.5時間</td>
+<td class="px-6 py-4 text-on-surface-variant">香港エクスプレス、キャセイパシフィック</td>
+<td class="px-6 py-4 font-bold text-primary">NT$5,000〜</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-6 py-4 font-semibold text-on-surface flex items-center gap-2"><span class="text-lg">🇸🇬</span> シンガポール (SIN)</td>
+<td class="px-6 py-4 text-on-surface-variant">関西国際 (KIX)</td>
+<td class="px-6 py-4 font-semibold text-secondary">約7時間</td>
+<td class="px-6 py-4 text-on-surface-variant">シンガポール航空、スクート</td>
+<td class="px-6 py-4 font-bold text-primary">NT$7,500〜</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-6 py-4 font-semibold text-on-surface flex items-center gap-2"><span class="text-lg">🇹🇭</span> バンコク (BKK)</td>
+<td class="px-6 py-4 text-on-surface-variant">関西国際 (KIX)</td>
+<td class="px-6 py-4 font-semibold text-secondary">約6時間</td>
+<td class="px-6 py-4 text-on-surface-variant">タイ航空、エアアジア</td>
+<td class="px-6 py-4 font-bold text-primary">NT$6,500〜</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="px-8 py-4 bg-surface-container-low border-t border-gray-100">
+<p class="text-xs text-on-surface-variant">※ 運賃は目安です。時期・予約タイミングにより変動します。各航空会社の公式サイトでご確認ください。</p>
+</div>
+</div>
+<!-- Search Flight CTA -->
+<div class="mt-10 text-center">
+<a href="#" class="inline-flex items-center gap-3 px-10 py-4 bg-primary text-white font-bold rounded-full hover:bg-primary-container transition-all shadow-lg shadow-primary/20 active:scale-95 text-lg">
+<span class="material-symbols-outlined" data-icon="flight_takeoff">flight_takeoff</span>
+                    格安航空券を検索する
+                </a>
+</div>
+</div>
+</section>
+
 <!-- Practical Information Grid -->
 <section class="py-20 max-w-7xl mx-auto px-4 md:px-8">
 <h2 class="font-headline-xl text-headline-xl text-center mb-16">お役立ち情報</h2>
