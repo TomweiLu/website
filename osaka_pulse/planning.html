@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Planning - OSAKA DISCOVER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;family=Noto+Serif:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#315183",
+                    "surface-dim": "#d9dadb",
+                    "tertiary-container": "#c9a900",
+                    "secondary-fixed-dim": "#aac7ff",
+                    "outline": "#946e69",
+                    "on-surface-variant": "#5f3f3b",
+                    "surface-tint": "#c0000d",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#264779",
+                    "inverse-primary": "#ffb4aa",
+                    "on-background": "#191c1d",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "on-surface": "#191c1d",
+                    "primary-container": "#e60012",
+                    "secondary-fixed": "#d6e3ff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "inverse-surface": "#2e3132",
+                    "on-secondary-fixed": "#001b3e",
+                    "tertiary-fixed-dim": "#e9c400",
+                    "primary-fixed": "#ffdad5",
+                    "on-primary-fixed-variant": "#930007",
+                    "surface-container-high": "#e7e8e9",
+                    "on-primary-fixed": "#410001",
+                    "background": "#f8f9fa",
+                    "on-error": "#ffffff",
+                    "tertiary": "#705d00",
+                    "on-primary-container": "#fff7f6",
+                    "on-tertiary-fixed": "#221b00",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "tertiary-fixed": "#ffe16d",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary-fixed-variant": "#544600",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#a6c4fe",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-container": "#4c3f00",
+                    "surface": "#f8f9fa",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-variant": "#e1e3e4",
+                    "secondary": "#3f5f92",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#e9bcb6",
+                    "primary": "#b7000c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "label-caps": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-caps": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-gray-200/50 shadow-sm font-['Plus_Jakarta_Sans'] font-medium antialiased h-20">
+<div class="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center h-full">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-black tracking-tighter text-red-600" href="index.html">OSAKA DISCOVER</a>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-700 hover:text-red-500 transition-all duration-200" href="sights.html">Sights</a>
+<a class="text-slate-700 hover:text-red-500 transition-all duration-200" href="food.html">Food</a>
+<a class="text-slate-700 hover:text-red-500 transition-all duration-200" href="food.html">Shopping</a>
+<a class="text-red-600 border-b-2 border-red-600 pb-1 font-bold" href="planning.html">Planning</a>
+<a class="text-slate-700 hover:text-red-500 transition-all duration-200" href="planning.html">News</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-slate-700 font-bold text-sm">JP/EN</button>
+<div class="flex items-center gap-2 text-slate-700 active:scale-95 transition-transform duration-150 cursor-pointer">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+</div>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section & Hotel Search -->
+<section class="relative h-[450px] flex items-center justify-center overflow-hidden">
+<img alt="Osaka city skyline at dusk with neon lights and modern architecture" class="absolute inset-0 w-full h-full object-cover" data-alt="Stunning sunset view of Osaka city skyline with the Tsutenkaku Tower glowing in warm golden light and neon urban details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-M0Xxh1e4DNcAmz-XcymYxafUeuOW80xQGdeQlBb0uVyPVno8KbF9PlRhdDAjxFwxkfM7p5KmN7yKEYHfauOUm4I0IeDCY6MjuGLMAgphfWD5_2GBah9cmx28GYVFrs9-C_tddqopjyyXF_Y-E6oJK0rexM5WJCf4a1D3Qg0qWiNQ7UGNA_G36KeDCDCjVnjazB-FkOFF3iUeHQz0VF7dmPradKL5ok3QVzPlW02-IlwdrDyyfiwq4NyBQAwXOI-vaCb3CjmxVko"/>
+<div class="absolute inset-0 bg-black/30"></div>
+<div class="relative z-10 w-full max-w-5xl px-4">
+<div class="text-center mb-12">
+<span class="font-label-caps text-label-caps text-white mb-4 block">TRAVEL PLANNING</span>
+<h1 class="font-display-lg text-display-lg text-white mb-8">旅の計画と基本情報</h1>
+</div>
+<!-- Hotel Booking Widget -->
+<div class="bg-white rounded-xl shadow-2xl p-6 grid grid-cols-1 md:grid-cols-4 gap-4 items-end">
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-500 uppercase tracking-wider">目的地</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary" data-icon="location_on">location_on</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary text-body-md" placeholder="エリアを選択" type="text" value="大阪市内"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-500 uppercase tracking-wider">宿泊日</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary" data-icon="calendar_today">calendar_today</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary text-body-md" type="text" value="2024.11.20 - 11.25"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold text-slate-500 uppercase tracking-wider">人数</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary" data-icon="person">person</span>
+<input class="w-full pl-10 pr-4 py-3 bg-surface-container-low border-none rounded-lg focus:ring-2 focus:ring-primary text-body-md" type="text" value="2名 1部屋"/>
+</div>
+</div>
+<button class="bg-primary hover:bg-primary-container text-white py-3.5 px-6 rounded-lg font-bold flex items-center justify-center gap-2 transition-all active:scale-95">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+                        ホテルを検索
+                    </button>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Weather & Currency -->
+<section class="max-w-7xl mx-auto px-4 md:px-8 py-16">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Weather Forecast -->
+<div class="lg:col-span-2 glass-card rounded-2xl p-8 border border-white/40 shadow-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="partly_sunny">partly_cloudy_day</span>
+</div>
+<div class="flex items-center justify-between mb-8">
+<h2 class="font-headline-md text-headline-md flex items-center gap-3 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-icon="cloud_queue">cloud_queue</span>
+                            大阪の天気予報
+                        </h2>
+<span class="text-slate-500 font-medium">Osaka, JP</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+<!-- Today -->
+<div class="bg-primary-container/10 rounded-xl p-4 text-center border border-primary/10">
+<p class="font-bold text-primary mb-2">今日</p>
+<span class="material-symbols-outlined text-4xl text-primary mb-2" data-icon="wb_sunny">wb_sunny</span>
+<p class="text-2xl font-black text-on-surface">22°</p>
+<p class="text-xs text-slate-500">14°</p>
+</div>
+<!-- Next Days -->
+<div class="p-4 text-center">
+<p class="font-medium text-slate-600 mb-2">11/21</p>
+<span class="material-symbols-outlined text-3xl text-secondary mb-2" data-icon="partly_sunny">partly_cloudy_day</span>
+<p class="text-xl font-bold text-on-surface">20°</p>
+<p class="text-xs text-slate-500">12°</p>
+</div>
+<div class="p-4 text-center">
+<p class="font-medium text-slate-600 mb-2">11/22</p>
+<span class="material-symbols-outlined text-3xl text-slate-400 mb-2" data-icon="cloud">cloud</span>
+<p class="text-xl font-bold text-on-surface">18°</p>
+<p class="text-xs text-slate-500">11°</p>
+</div>
+<div class="p-4 text-center">
+<p class="font-medium text-slate-600 mb-2">11/23</p>
+<span class="material-symbols-outlined text-3xl text-on-secondary-container mb-2" data-icon="rainy">rainy</span>
+<p class="text-xl font-bold text-on-surface">16°</p>
+<p class="text-xs text-slate-500">10°</p>
+</div>
+<div class="p-4 text-center">
+<p class="font-medium text-slate-600 mb-2">11/24</p>
+<span class="material-symbols-outlined text-3xl text-secondary mb-2" data-icon="wb_cloudy">wb_cloudy</span>
+<p class="text-xl font-bold text-on-surface">19°</p>
+<p class="text-xs text-slate-500">12°</p>
+</div>
+</div>
+</div>
+<!-- Currency Converter -->
+<div class="bg-secondary text-white rounded-2xl p-8 shadow-xl">
+<h2 class="font-headline-md text-headline-md mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-4xl" data-icon="currency_exchange">currency_exchange</span>
+                        通貨換算
+                    </h2>
+<div class="space-y-6">
+<div class="bg-white/10 rounded-xl p-4 border border-white/20">
+<div class="flex justify-between items-center mb-2">
+<span class="text-sm font-bold opacity-80">台湾ドル (TWD)</span>
+<span class="material-symbols-outlined" data-icon="flag">flag</span>
+</div>
+<div class="text-3xl font-black">1,000.00</div>
+</div>
+<div class="flex justify-center">
+<div class="bg-primary p-2 rounded-full shadow-lg">
+<span class="material-symbols-outlined text-2xl rotate-90" data-icon="sync_alt">sync_alt</span>
+</div>
+</div>
+<div class="bg-white/10 rounded-xl p-4 border border-white/20">
+<div class="flex justify-between items-center mb-2">
+<span class="text-sm font-bold opacity-80">日本円 (JPY)</span>
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+</div>
+<div class="text-3xl font-black">4,720.00</div>
+</div>
+<p class="text-xs opacity-60 text-center">リアルタイムレート: 1 TWD = 4.72 JPY</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Transportation Guide -->
+<section class="bg-surface-container-low py-20">
+<div class="max-w-7xl mx-auto px-4 md:px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">TRANSPORTATION</span>
+<h2 class="font-headline-xl text-headline-xl">主要な交通手段</h2>
+</div>
+<p class="max-w-md text-slate-600 font-body-lg">
+                        大阪の交通網は非常に発達しています。電車、バス、タクシーを駆使して効率よく移動しましょう。
+                    </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Metro Card -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 overflow-hidden">
+<img alt="Clean modern interior of a Japanese train station" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern interior of an Osaka Metro station with clean white tiling, digital signage, and people walking on polished floors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoPPzKT6-6KVpFoC3ywSSNxOhCu2uNjOid1C2zJisew32S9vvewTLaZSvC6_7DIVnRL4pYkyflBZCkwfUbvSyE9L_-AsCr64S5wfGP3Nz26CWpBTpJ1eA4wtjjpjQYFGNaZqJM2vc2MrD0pi1owda-DwQ5C18qlHvUqY8sfEpHTXsJGX5lSliaCPnuBJ0nqTArXksB1payq7M7gdg3lFaXzGa9hesrYpfSbFgYIiDbCfbd2JI1Ghn0yp09NzuuCZ0PNiNZmaDnAX0"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-on-secondary-container text-white rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="subway">subway</span>
+</div>
+<h3 class="text-2xl font-bold text-secondary">Osaka Metro</h3>
+</div>
+<p class="text-slate-600 mb-6 font-body-md">御堂筋線をはじめとする9つの路線が市内全域をカバー。観光には「1日乗車券」がお得です。</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-red-100 text-red-600 rounded-full text-xs font-bold">御堂筋線</span>
+<span class="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-xs font-bold">四つ橋線</span>
+<span class="px-3 py-1 bg-green-100 text-green-600 rounded-full text-xs font-bold">中央線</span>
+</div>
+</div>
+</div>
+<!-- JR Card -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 group hover:shadow-xl transition-shadow duration-300">
+<div class="h-48 overflow-hidden">
+<img alt="JR train arriving at a station in Osaka" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A classic green JR Osaka Loop Line train arriving at a sunlit outdoor station with high-rise buildings in the distance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV_ZAJH-1oe3SgJEMPnQw5En_Qs_hVCj2yX2xvICC50ldMV860po_m_gFMqGWNCzsUZd_LYYPYOQTea0AGsHmH9TX8A0jhtCWLsBRc_pdcrV0glJcZxsxfDenCPQ5ABX-B6Kkc9sqyiAKCVIWFrCndvK3bnNSv1SlnFi3ngRlR5qeLEAMLmhhQeh50xJOg10XA3XGq_uF8IOsofFWRnP0vPEBml-i8DPZlICVW4JftF6zOnygH8lEEOll2nSiAv0QZjOVUOlSMusI"/>
+</div>
+<div class="p-8">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 bg-secondary-fixed-dim text-secondary flex items-center justify-center rounded-full">
+<span class="material-symbols-outlined" data-icon="train">train</span>
+</div>
+<h3 class="text-2xl font-bold text-secondary">JR西日本</h3>
+</div>
+<p class="text-slate-600 mb-6 font-body-md">大阪環状線や京都・神戸・奈良へのアクセスに。関西国際空港からの「はるか」も便利です。</p>
+<ul class="space-y-2 text-sm text-slate-500">
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+                                    ICOCA、Suica利用可能
+                                </li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="check_circle">check_circle</span>
+                                    大阪環状線：主要スポットを一周
+                                </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Practical Information Grid -->
+<section class="py-20 max-w-7xl mx-auto px-4 md:px-8">
+<h2 class="font-headline-xl text-headline-xl text-center mb-16">お役立ち情報</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6" data-icon="wifi">wifi</span>
+<h4 class="text-xl font-bold mb-4">Wi-Fi &amp; 通信</h4>
+<p class="text-slate-600 text-sm">主要駅や公共施設で無料Wi-Fi「Osaka Free Wi-Fi」が利用可能です。</p>
+</div>
+<div class="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6" data-icon="medical_services">medical_services</span>
+<h4 class="text-xl font-bold mb-4">緊急・医療</h4>
+<p class="text-slate-600 text-sm">急病の際は119番、警察は110番。多言語対応の医療案内も充実しています。</p>
+</div>
+<div class="p-8 bg-white border border-gray-100 rounded-2xl shadow-sm text-center">
+<span class="material-symbols-outlined text-primary text-5xl mb-6" data-icon="luggage">luggage</span>
+<h4 class="text-xl font-bold mb-4">手荷物預かり</h4>
+<p class="text-slate-600 text-sm">各主要駅にはコインロッカーの他、当日配送サービスもございます。</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-gray-200 py-12 font-['Plus_Jakarta_Sans'] text-sm">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="space-y-4">
+<div class="text-xl font-bold text-red-600">OSAKA DISCOVER</div>
+<p class="text-slate-500 leading-relaxed">
+                    大阪の魅力を世界へ。公式観光ポータルサイト。
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 hover:text-red-600 cursor-pointer" data-icon="language">language</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-red-600 cursor-pointer" data-icon="share">share</span>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-blue-900 mb-4">Explore</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-red-600 transition-colors" href="#">Sitemap</a></li>
+<li><a class="text-slate-500 hover:text-red-600 transition-colors" href="planning.html">Weather</a></li>
+<li><a class="text-slate-500 hover:text-red-600 transition-colors" href="planning.html">Currency</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-blue-900 mb-4">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-slate-500 hover:text-red-600 transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-red-600 transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-blue-900 mb-4">Contact Info</h4>
+<p class="text-slate-500 text-xs">
+                    大阪市中央区道頓堀<br/>
+                    TEL: 06-1234-5678<br/>
+                    Email: info@osaka-discover.jp
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-gray-200 text-center text-slate-400">
+            © 大阪観光局 2024. 無断複写・転載を禁じます。
+        </div>
+</footer>
+</body></html>
