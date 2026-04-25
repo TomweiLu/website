@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ニュース &amp; イベント - OSAKA DISCOVER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600&family=Noto+Serif:ital,wght@0,600;1,600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "on-secondary-container": "#315183",
+                    "surface-dim": "#d9dadb",
+                    "tertiary-container": "#c9a900",
+                    "secondary-fixed-dim": "#aac7ff",
+                    "outline": "#946e69",
+                    "on-surface-variant": "#5f3f3b",
+                    "surface-tint": "#c0000d",
+                    "on-error-container": "#93000a",
+                    "on-secondary-fixed-variant": "#264779",
+                    "inverse-primary": "#ffb4aa",
+                    "on-background": "#191c1d",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#edeeef",
+                    "on-surface": "#191c1d",
+                    "primary-container": "#e60012",
+                    "secondary-fixed": "#d6e3ff",
+                    "inverse-on-surface": "#f0f1f2",
+                    "inverse-surface": "#2e3132",
+                    "on-secondary-fixed": "#001b3e",
+                    "tertiary-fixed-dim": "#e9c400",
+                    "primary-fixed": "#ffdad5",
+                    "on-primary-fixed-variant": "#930007",
+                    "surface-container-high": "#e7e8e9",
+                    "on-primary-fixed": "#410001",
+                    "background": "#f8f9fa",
+                    "on-error": "#ffffff",
+                    "tertiary": "#705d00",
+                    "on-primary-container": "#fff7f6",
+                    "on-tertiary-fixed": "#221b00",
+                    "primary-fixed-dim": "#ffb4aa",
+                    "tertiary-fixed": "#ffe16d",
+                    "surface-container-highest": "#e1e3e4",
+                    "on-tertiary-fixed-variant": "#544600",
+                    "surface-container-lowest": "#ffffff",
+                    "secondary-container": "#a6c4fe",
+                    "surface-bright": "#f8f9fa",
+                    "on-tertiary-container": "#4c3f00",
+                    "surface": "#f8f9fa",
+                    "error-container": "#ffdad6",
+                    "surface-container-low": "#f3f4f5",
+                    "surface-variant": "#e1e3e4",
+                    "secondary": "#3f5f92",
+                    "on-primary": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "outline-variant": "#e9bcb6",
+                    "primary": "#b7000c"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1280px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "unit": "8px"
+            },
+            "fontFamily": {
+                    "headline-xl": ["Plus Jakarta Sans"],
+                    "display-lg": ["Plus Jakarta Sans"],
+                    "body-md": ["Be Vietnam Pro"],
+                    "headline-md": ["Plus Jakarta Sans"],
+                    "body-lg": ["Be Vietnam Pro"],
+                    "label-caps": ["Noto Serif"]
+            },
+            "fontSize": {
+                    "headline-xl": ["48px", {"lineHeight": "56px", "fontWeight": "700"}],
+                    "display-lg": ["64px", {"lineHeight": "72px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "label-caps": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "600"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .japanese-vertical {
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+<body class="bg-background font-body-md text-on-background antialiased">
+
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl dark:bg-slate-900/70 border-b border-gray-200/50 dark:border-gray-800/50 shadow-sm">
+<nav class="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center h-20 w-full font-['Plus_Jakarta_Sans'] font-medium antialiased">
+<div class="flex items-center gap-12">
+<a class="text-2xl font-black tracking-tighter text-red-600 dark:text-red-500" href="index.html">OSAKA DISCOVER</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-700 dark:text-slate-300 hover:text-red-500 transition-all duration-200" href="sights.html">Sights</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-red-500 transition-all duration-200" href="food.html">Food</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-red-500 transition-all duration-200" href="food.html">Shopping</a>
+<a class="text-slate-700 dark:text-slate-300 hover:text-red-500 transition-all duration-200" href="planning.html">Planning</a>
+<a class="text-red-600 dark:text-red-500 border-b-2 border-red-600 pb-1 font-bold" href="news.html">News</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-slate-700 font-bold cursor-pointer hover:text-red-600 transition-colors">JP/EN</span>
+<button class="active:scale-95 transition-transform duration-150">
+<span class="material-symbols-outlined text-slate-700" data-icon="search">search</span>
+</button>
+</div>
+</nav>
+</header>
+
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[480px] w-full overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQqDaPoT9FmmdygTm3WJ4bgcrf3v0z6HxgdReQl4zXP1jZoefbFSRNKEbCxpqVWchbafEZoMaye8IIDyYmYWavRjlRpyvpmZq101LDLAIu32sfmTy5_Q-YrLk4vXBRGMF822PW5p-p_xGKl7FV7dH-6sa3f0kIHZOk7gm7H_ahauK_GsIHp0VqaRA9PRD3QgU2TIMiKVaxnWyfahgISjivQe9jeU0fvV7ijyK-I7DgN2FghNOiz4642J-VwC3PZgYyRB9laqhhAgg" alt="Osaka festival with lanterns and crowds"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<span class="font-label-caps text-label-caps text-primary-fixed bg-primary px-4 py-1 rounded-full inline-block mb-6">OSAKA NEWS &amp; EVENTS</span>
+<h1 class="font-display-lg text-display-lg text-white mb-4 max-w-3xl">
+                大阪の今を、届ける。
+            </h1>
+<p class="font-body-lg text-body-lg text-white/90 max-w-2xl">
+                旬のイベント情報から観光ニュースまで、大阪の「今」を余すところなくお届けします。
+            </p>
+</div>
+<div class="absolute right-12 top-1/2 -translate-y-1/2 hidden lg:flex flex-col items-center">
+<span class="japanese-vertical font-label-caps text-label-caps text-white/40 tracking-[0.5em] mb-4">ニュース・イベント</span>
+<div class="w-px h-24 bg-white/30"></div>
+</div>
+</section>
+
+<!-- Category Filter Tabs -->
+<section class="sticky top-20 z-40 bg-white/90 backdrop-blur-md border-b border-gray-200/80 shadow-sm">
+<div class="max-w-7xl mx-auto px-8 flex gap-2 overflow-x-auto py-3 scrollbar-none">
+<button class="px-5 py-2 rounded-full bg-primary text-white font-bold text-sm whitespace-nowrap transition-all">すべて</button>
+<button class="px-5 py-2 rounded-full bg-surface-container text-on-surface font-semibold text-sm whitespace-nowrap hover:bg-primary/10 hover:text-primary transition-all">祭り・イベント</button>
+<button class="px-5 py-2 rounded-full bg-surface-container text-on-surface font-semibold text-sm whitespace-nowrap hover:bg-primary/10 hover:text-primary transition-all">グルメ</button>
+<button class="px-5 py-2 rounded-full bg-surface-container text-on-surface font-semibold text-sm whitespace-nowrap hover:bg-primary/10 hover:text-primary transition-all">観光・スポット</button>
+<button class="px-5 py-2 rounded-full bg-surface-container text-on-surface font-semibold text-sm whitespace-nowrap hover:bg-primary/10 hover:text-primary transition-all">交通・アクセス</button>
+<button class="px-5 py-2 rounded-full bg-surface-container text-on-surface font-semibold text-sm whitespace-nowrap hover:bg-primary/10 hover:text-primary transition-all">文化・芸術</button>
+</div>
+</section>
+
+<!-- Featured News Bento Grid -->
+<section class="py-16 bg-surface px-4 md:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-10">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-2 block">FEATURED</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">注目ニュース</h2>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Main Featured Card -->
+<div class="md:col-span-2 group relative overflow-hidden rounded-2xl h-[420px] shadow-xl cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQqDaPoT9FmmdygTm3WJ4bgcrf3v0z6HxgdReQl4zXP1jZoefbFSRNKEbCxpqVWchbafEZoMaye8IIDyYmYWavRjlRpyvpmZq101LDLAIu32sfmTy5_Q-YrLk4vXBRGMF822PW5p-p_xGKl7FV7dH-6sa3f0kIHZOk7gm7H_ahauK_GsIHp0VqaRA9PRD3QgU2TIMiKVaxnWyfahgISjivQe9jeU0fvV7ijyK-I7DgN2FghNOiz4642J-VwC3PZgYyRB9laqhhAgg" alt="Tenjin Matsuri"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end">
+<div class="flex items-center gap-3 mb-4">
+<span class="bg-primary text-white text-[10px] font-black px-3 py-1 rounded-full uppercase">祭り・イベント</span>
+<span class="text-white/60 text-sm">2024年7月24日〜25日</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-white mb-3">天神祭 2024 — 日本三大祭りが今年も開幕</h3>
+<p class="text-white/80 font-body-md line-clamp-2 max-w-xl">船渡御と奉納花火が天満橋の夜空を彩ります。約1300年の歴史を誇る大阪最大の祭典。観覧エリア・交通規制情報もあわせてご確認ください。</p>
+<div class="mt-4 flex items-center text-primary-fixed font-bold text-sm group-hover:gap-3 gap-2 transition-all">
+詳しく読む <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+<!-- Side News Stack -->
+<div class="space-y-6">
+<div class="bg-white p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-amber-100 text-amber-700 text-[10px] font-black px-3 py-1 rounded-full uppercase">グルメ</span>
+<span class="text-slate-400 text-xs">2024年6月3日</span>
+</div>
+<h4 class="font-bold text-lg text-on-surface leading-snug group-hover:text-primary transition-colors mb-2">道頓堀・新規オープン！ミシュラン一ツ星のラーメン店が道頓堀に上陸</h4>
+<p class="text-sm text-on-surface-variant line-clamp-2">京都に本店を構える人気ラーメン「麺処 天一」が道頓堀に初出店。行列必至の濃厚鶏白湯スープが大阪でも楽しめます。</p>
+<div class="mt-4 flex items-center text-primary font-bold text-sm">
+詳しく読む <span class="material-symbols-outlined ml-1 text-sm scale-75">open_in_new</span>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl border border-outline-variant shadow-sm hover:shadow-md transition-shadow group cursor-pointer">
+<div class="flex items-center gap-2 mb-3">
+<span class="bg-blue-100 text-blue-700 text-[10px] font-black px-3 py-1 rounded-full uppercase">観光・スポット</span>
+<span class="text-slate-400 text-xs">2024年5月20日</span>
+</div>
+<h4 class="font-bold text-lg text-on-surface leading-snug group-hover:text-primary transition-colors mb-2">大阪城公園ナイトイルミネーション、今夏も延長決定</h4>
+<p class="text-sm text-on-surface-variant line-clamp-2">昨年大好評だった大阪城公園の夜間ライトアップが今夏も延長開催。新たな光のアートも追加予定。</p>
+<div class="mt-4 flex items-center text-primary font-bold text-sm">
+詳しく読む <span class="material-symbols-outlined ml-1 text-sm scale-75">open_in_new</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Upcoming Events Calendar -->
+<section class="py-16 bg-surface-container-low px-4 md:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<span class="font-label-caps text-label-caps text-primary mb-2 block uppercase tracking-widest">UPCOMING</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">今後のイベントカレンダー</h2>
+<div class="w-20 h-1 bg-primary mx-auto mt-6"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Event Card 1 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group cursor-pointer">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZTKkNLhMSRH9F5UrcMb3RZI4Wwh9hPByX0M4YpCaeZS8Kf2Bsdnk0t3uvayI_K6dLy9u_zW5PcvfTOLwG9WxKl42oocQ-3Lulks0rB54hEAEuS5W01FpBD7haq8MrQmtMbe1B7dVPbGmHfTzXi8MF_2fPRxj0wZOeiCoJ9t8WyxRqOoy4VT-kDKwz32Vx_FdrDZWO_wMW7u1TKXbmJ6zjr_-q4-sWNlKc4UIIfQKOy-Hvn8UbYfVN_tHfXCExmkl-8ST-7lBb8Ow" alt="Naniwa Yodogawa Fireworks"/>
+<div class="absolute top-4 left-4">
+<div class="bg-white rounded-xl px-3 py-2 shadow-md text-center min-w-[56px]">
+<div class="text-2xl font-black text-primary leading-none">8</div>
+<div class="text-[10px] font-bold text-slate-500 uppercase">Aug</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<span class="bg-red-100 text-red-700 text-[10px] font-black px-3 py-1 rounded-full uppercase">花火大会</span>
+<h3 class="font-bold text-xl mt-3 mb-2 group-hover:text-primary transition-colors">なにわ淀川花火大会</h3>
+<p class="text-sm text-on-surface-variant mb-4">大阪最大級の花火大会。約2万発の打ち上げ花火が夜空を染め上げる。淀川河川公園が会場となり、多くの屋台も出店。</p>
+<div class="flex items-center gap-4 text-xs text-slate-500 font-semibold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span>8月第1土曜日</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span>淀川河川公園</span>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group cursor-pointer">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXn23ozCI91k5cnZJsXHakrFnfOSMKKlMA3oVGoYj6wPydCjpWWZb-QlqRcQpM30Vie8jugDefEGvxfMG8XWLm2B5wNJBtoWQSGw-yM2qMjliaB7_RFIVuZ7LFWWh9wuCX0LuB_Q3M1XdXL_eBbClpoVhOjAhc6SeMW8lquIZFxGZBuKH7Xf_2ibV7tXLOd1O1dsRrgd3cWQ8D_WhjEWuPBcaz4cXEvGo-VPcm06pt-aARGtcDQ9QEVqh-E0gQIfe3_FmwUiYIgpQ" alt="Shitennoji Flea Market"/>
+<div class="absolute top-4 left-4">
+<div class="bg-white rounded-xl px-3 py-2 shadow-md text-center min-w-[56px]">
+<div class="text-2xl font-black text-primary leading-none">21</div>
+<div class="text-[10px] font-bold text-slate-500 uppercase">Jul</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<span class="bg-amber-100 text-amber-700 text-[10px] font-black px-3 py-1 rounded-full uppercase">骨董市</span>
+<h3 class="font-bold text-xl mt-3 mb-2 group-hover:text-primary transition-colors">四天王寺 夏の骨董まつり</h3>
+<p class="text-sm text-on-surface-variant mb-4">毎月21日に開催される四天王寺の境内骨董市。古道具・アンティーク・雑貨が並び、掘り出し物を探す楽しさがあります。</p>
+<div class="flex items-center gap-4 text-xs text-slate-500 font-semibold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span>毎月21日</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span>四天王寺</span>
+</div>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group cursor-pointer">
+<div class="h-48 overflow-hidden relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIsIIlEC6L39iiGhp7BfvGOxPH-OYDXmXwRIkbNqIUBl3nEoG-VEwkXmHFJanjTqomjvFcx7aWjmGQtBnI1Ke7I6y3rz-A1M_Z8qVoHZDliq66gIUS-AsCWX_JPlt_dCPHmyNN23JXa3SbihCJWyRKRgKYhwroF8V7pzthNnc" alt="Nipponbashi Street Festa"/>
+<div class="absolute top-4 left-4">
+<div class="bg-white rounded-xl px-3 py-2 shadow-md text-center min-w-[56px]">
+<div class="text-2xl font-black text-primary leading-none">3</div>
+<div class="text-[10px] font-bold text-slate-500 uppercase">Mar</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<span class="bg-purple-100 text-purple-700 text-[10px] font-black px-3 py-1 rounded-full uppercase">ポップカルチャー</span>
+<h3 class="font-bold text-xl mt-3 mb-2 group-hover:text-primary transition-colors">日本橋ストリートフェスタ 2025</h3>
+<p class="text-sm text-on-surface-variant mb-4">日本最大級のコスプレイベント。アニメ・マンガ・ゲームファンが日本全国・世界中から集まり、でんでんタウン周辺が一大カーニバルに。</p>
+<div class="flex items-center gap-4 text-xs text-slate-500 font-semibold">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">calendar_today</span>3月第1日曜日</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">location_on</span>日本橋</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Latest News List -->
+<section class="py-16 bg-white px-4 md:px-8">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-2 block uppercase tracking-widest">LATEST</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">最新ニュース一覧</h2>
+</div>
+<div class="flex items-center gap-2 bg-surface-container rounded-xl px-4 py-2 border border-gray-200">
+<span class="material-symbols-outlined text-slate-400 text-sm">filter_list</span>
+<select class="bg-transparent border-none text-sm font-semibold text-on-surface focus:ring-0 pr-2">
+<option>新着順</option>
+<option>人気順</option>
+<option>イベント</option>
+</select>
+</div>
+</div>
+<div class="space-y-4">
+<!-- News Item 1 -->
+<article class="flex flex-col sm:flex-row gap-6 p-6 bg-surface-container-low rounded-2xl hover:shadow-md transition-shadow group cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="sm:w-40 h-32 sm:h-28 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYrWkAhfzM_siFlchEF7nfYhK0V7FUayJy94oOtZ0-9Y_le3oig30wMJIrQrIFPgu3gtfKAnAWBXGoQsf144rpNRpaokzVwLEQ2XSpptSzjrARxIhHREbvFA6JUtLIwbzxtp2RIW8oS2tJ6QhDZG6qxLWLn6ctbZJkNJXEJfwMRgsmKxr7WIW1nO-Ao-xTx5AI2GG4oukXQm7OZxNz5iKjvYd5hbZ3ISIwY5uYPPrFzb513HXb6Sye34vM1D6sa12tPld7-oOc1c4" alt="Takoyaki news"/>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2 mb-2">
+<span class="bg-primary/10 text-primary text-[10px] font-black px-3 py-1 rounded-full uppercase">グルメ</span>
+<span class="text-slate-400 text-xs">2024年6月15日</span>
+</div>
+<h3 class="font-bold text-lg text-on-surface group-hover:text-primary transition-colors mb-1">大阪・たこ焼きの新店舗がミシュランガイドに掲載！屋台の名物が高級グルメに</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">道頓堀の老舗「くれおーる」がミシュランガイド大阪 2024に選出。50年以上の歴史を持つ秘伝のソースが評価されました。</p>
+</div>
+<div class="sm:self-center text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</article>
+<!-- News Item 2 -->
+<article class="flex flex-col sm:flex-row gap-6 p-6 bg-surface-container-low rounded-2xl hover:shadow-md transition-shadow group cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="sm:w-40 h-32 sm:h-28 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoPPzKT6-6KVpFoC3ywSSNxOhCu2uNjOid1C2zJisew32S9vvewTLaZSvC6_7DIVnRL4pYkyflBZCkwfUbvSyE9L_-AsCr64S5wfGP3Nz26CWpBTpJ1eA4wtjjpjQYFGNaZqJM2vc2MrD0pi1owda-DwQ5C18qlHvUqY8sfEpHTXsJGX5lSliaCPnuBJ0nqTArXksB1payq7M7gdg3lFaXzGa9hesrYpfSbFgYIiDbCfbd2JI1Ghn0yp09NzuuCZ0PNiNZmaDnAX0" alt="Osaka Metro news"/>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2 mb-2">
+<span class="bg-blue-100 text-blue-700 text-[10px] font-black px-3 py-1 rounded-full uppercase">交通・アクセス</span>
+<span class="text-slate-400 text-xs">2024年6月10日</span>
+</div>
+<h3 class="font-bold text-lg text-on-surface group-hover:text-primary transition-colors mb-1">大阪メトロ、2025年万博に向け御堂筋線の全駅バリアフリー化が完了</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">大阪メトロは御堂筋線の全24駅においてホームドアの設置と多目的トイレの整備を完了したと発表。2025年万博を前に利便性が大幅向上。</p>
+</div>
+<div class="sm:self-center text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</article>
+<!-- News Item 3 -->
+<article class="flex flex-col sm:flex-row gap-6 p-6 bg-surface-container-low rounded-2xl hover:shadow-md transition-shadow group cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="sm:w-40 h-32 sm:h-28 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbi3-zkD8nYc23YkuZdXD2X3m231fy_sDNpoM2EFDoV8sLH2opawZQcEuGmU-KzQSNEjKT3kKsj4rQTNKqZBA6MHKHglPP5OXEpUOxoq5HelT4-J0hIioncPZYLsDwHY6tShQMXqYVH3rJn2aau0itRru1vOVIUY9CygUOssLPi_OLkF9Spw49GQzWH55Jb8TpJwciGXcrFXKA886MgTQwSUT02LU99Q0wkfH8XSWeeYGUCHGSa_G-PdPI55sAFy4L7LJi2NT0YlY" alt="Bunraku culture news"/>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2 mb-2">
+<span class="bg-green-100 text-green-700 text-[10px] font-black px-3 py-1 rounded-full uppercase">文化・芸術</span>
+<span class="text-slate-400 text-xs">2024年5月28日</span>
+</div>
+<h3 class="font-bold text-lg text-on-surface group-hover:text-primary transition-colors mb-1">国立文楽劇場、初心者向け「文楽入門公演」の夏季日程を発表</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">ユネスコ無形文化遺産の文楽を気軽に楽しめる入門公演が今夏も開催。字幕ガイドと解説付きで、外国人観光客にも好評です。</p>
+</div>
+<div class="sm:self-center text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</article>
+<!-- News Item 4 -->
+<article class="flex flex-col sm:flex-row gap-6 p-6 bg-surface-container-low rounded-2xl hover:shadow-md transition-shadow group cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="sm:w-40 h-32 sm:h-28 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDV_ZAJH-1oe3SgJEMPnQw5En_Qs_hVCj2yX2xvICC50ldMV860po_m_gFWNCzsUZd_LYYPYOQTea0AGsHmH9TX8A0jhtCWLsBRc_pdcrV0glJcZxsxfDenCPQ5ABX-B6Kkc9sqyiAKCVIWFrCndvK3bnNSv1SlnFi3ngRlR5qeLEAMLmhhQeh50xJOg10XA3XGq_uF8IOsofFWRnP0vPEBml-i8DPZlICVW4JftF6zOnygH8lEEOll2nSiAv0QZjOVUOlSMusI" alt="JR Haruka train"/>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2 mb-2">
+<span class="bg-blue-100 text-blue-700 text-[10px] font-black px-3 py-1 rounded-full uppercase">交通・アクセス</span>
+<span class="text-slate-400 text-xs">2024年5月15日</span>
+</div>
+<h3 class="font-bold text-lg text-on-surface group-hover:text-primary transition-colors mb-1">関西国際空港〜大阪市内、特急「はるか」がICカード対応に。利便性が向上</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">JR西日本は特急「はるか」全席でICOCA・Suica等のICカード利用を開始したと発表。訪日外国人旅行者の移動がさらに便利に。</p>
+</div>
+<div class="sm:self-center text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</article>
+<!-- News Item 5 -->
+<article class="flex flex-col sm:flex-row gap-6 p-6 bg-surface-container-low rounded-2xl hover:shadow-md transition-shadow group cursor-pointer border border-transparent hover:border-outline-variant">
+<div class="sm:w-40 h-32 sm:h-28 rounded-xl overflow-hidden flex-shrink-0 bg-slate-100">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfrBv3JrWfsfdHAyvuAfAVJreDLSHOFnNarAkNnA-qvACTBskZ5ivXKog9xtlGG1cXgeyfmckYVSctv8dG2Pb2npKclJNF_lL7aw7jjIHMa4Gfrk2C2eNwo_GzDyITCOOqUX9RwTOVO-_0EZ0mpj0I7t3eDE5RmS-Eqyt4rKoWMVdv8GMEt17_X8YoMoVJBTMRQea49g_8ZyMPAUW809tUUCJWK6scn7Al1Hdy-1oW4YwgkAB0numnkuJ31sTI1a-AKj4k88CDKiA" alt="Shinsaibashi shopping"/>
+</div>
+<div class="flex-1">
+<div class="flex flex-wrap items-center gap-2 mb-2">
+<span class="bg-pink-100 text-pink-700 text-[10px] font-black px-3 py-1 rounded-full uppercase">ショッピング</span>
+<span class="text-slate-400 text-xs">2024年5月8日</span>
+</div>
+<h3 class="font-bold text-lg text-on-surface group-hover:text-primary transition-colors mb-1">心斎橋に新たな旗艦店が続々オープン！2024年秋にかけて注目ブランドが集結</h3>
+<p class="text-sm text-on-surface-variant line-clamp-2">ルイ・ヴィトンの新旗艦店をはじめ、複数の国内外ブランドが心斎橋筋エリアに出店。関西最大の商業エリアがさらに充実します。</p>
+</div>
+<div class="sm:self-center text-primary">
+<span class="material-symbols-outlined">chevron_right</span>
+</div>
+</article>
+</div>
+<!-- Load More -->
+<div class="text-center mt-10">
+<button class="inline-flex items-center gap-2 px-10 py-4 border-2 border-primary text-primary font-bold rounded-full hover:bg-primary hover:text-white transition-all active:scale-95">
+<span class="material-symbols-outlined">refresh</span> もっと見る
+</button>
+</div>
+</div>
+</section>
+
+<!-- Annual Festivals Banner -->
+<section class="py-16 bg-slate-900 relative overflow-hidden px-4 md:px-8">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/10 -skew-x-12 translate-x-20"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="text-center mb-12">
+<span class="font-label-caps text-label-caps text-primary-fixed mb-2 block">ANNUAL FESTIVALS</span>
+<h2 class="font-headline-xl text-headline-xl text-white">大阪・年間祭典カレンダー</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
+<div class="text-4xl mb-4">🌸</div>
+<div class="text-primary font-bold text-sm mb-1">3月〜4月</div>
+<h3 class="text-white font-bold text-lg mb-2">造幣局 桜の通り抜け</h3>
+<p class="text-white/60 text-sm">約130品種の桜が咲き誇る、春の大阪の風物詩。一般公開は約1週間のみ。</p>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
+<div class="text-4xl mb-4">🎆</div>
+<div class="text-primary font-bold text-sm mb-1">7月24日〜25日</div>
+<h3 class="text-white font-bold text-lg mb-2">天神祭</h3>
+<p class="text-white/60 text-sm">日本三大祭りの一つ。大川に約100隻の船が行き交い、花火が夜空を彩ります。</p>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
+<div class="text-4xl mb-4">🍂</div>
+<div class="text-primary font-bold text-sm mb-1">10月〜11月</div>
+<h3 class="text-white font-bold text-lg mb-2">大阪城 紅葉まつり</h3>
+<p class="text-white/60 text-sm">大阪城公園内の紅葉と天守閣のライトアップが幻想的な秋の景色を演出。</p>
+</div>
+<div class="bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all">
+<div class="text-4xl mb-4">🎍</div>
+<div class="text-primary font-bold text-sm mb-1">12月〜1月</div>
+<h3 class="text-white font-bold text-lg mb-2">御堂筋イルミネーション</h3>
+<p class="text-white/60 text-sm">4km以上にわたる御堂筋を約90万球のLEDが照らす、大阪冬の一大イベント。</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Newsletter CTA -->
+<section class="py-16 bg-primary px-4 md:px-8">
+<div class="max-w-3xl mx-auto text-center">
+<span class="material-symbols-outlined text-5xl text-white/80 mb-4" data-icon="notifications">notifications</span>
+<h2 class="font-headline-xl text-headline-xl text-white mb-4">最新情報をメールでお届け</h2>
+<p class="font-body-lg text-white/80 mb-8">大阪の旬なニュースやイベント情報を逃さず受け取りましょう。いつでも解除できます。</p>
+<div class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+<input class="flex-1 px-5 py-4 rounded-xl border-none focus:ring-2 focus:ring-white text-on-surface font-body-md placeholder:text-slate-400" placeholder="メールアドレスを入力" type="email"/>
+<button class="px-8 py-4 bg-white text-primary font-bold rounded-xl hover:bg-slate-50 transition-colors active:scale-95 whitespace-nowrap shadow-lg">
+                無料で登録
+            </button>
+</div>
+<p class="text-white/50 text-xs mt-4">スパムは送りません。いつでも配信停止できます。</p>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="w-full py-12 bg-slate-50 dark:bg-slate-950 border-t border-gray-200 dark:border-gray-800">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-1">
+<a class="text-xl font-bold text-red-600 dark:text-red-500 block mb-4" href="index.html">OSAKA DISCOVER</a>
+<p class="text-slate-500 dark:text-slate-400 font-['Plus_Jakarta_Sans'] text-sm leading-relaxed">
+                    Osaka Official Tourism Guide. Discover the energy, the tastes, and the soul of Japan's most vibrant city.
+                </p>
+</div>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-white mb-4 text-sm uppercase tracking-widest">Resources</h4>
+<ul class="space-y-2 font-['Plus_Jakarta_Sans'] text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-red-600 transition-colors hover:underline" href="#">Sitemap</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-red-600 transition-colors hover:underline" href="planning.html">Weather</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-red-600 transition-colors hover:underline" href="planning.html">Currency</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-white mb-4 text-sm uppercase tracking-widest">Legal</h4>
+<ul class="space-y-2 font-['Plus_Jakarta_Sans'] text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-red-600 transition-colors hover:underline" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-red-600 transition-colors hover:underline" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-800 dark:text-white mb-4 text-sm uppercase tracking-widest">Contact</h4>
+<ul class="space-y-2 font-['Plus_Jakarta_Sans'] text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-red-600 transition-colors hover:underline" href="#">Contact Support</a></li>
+<li class="flex gap-4 mt-4">
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer" data-icon="public">public</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-primary cursor-pointer" data-icon="share">share</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 font-['Plus_Jakarta_Sans'] text-sm">© 大阪観光局 2024. 無断複写・転載を禁じます。</p>
+<div class="flex gap-6">
+<span class="text-red-600 font-semibold cursor-pointer text-sm">日本語</span>
+<span class="text-slate-400 font-semibold cursor-pointer text-sm">English</span>
+</div>
+</div>
+</footer>
+</body></html>
