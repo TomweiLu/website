@@ -1,4 +1,6 @@
-tailwind.config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./osaka_pulse/**/*.html"],
   darkMode: "class",
   theme: {
     extend: {
@@ -82,4 +84,8 @@ tailwind.config = {
       }
     },
   },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/container-queries')
+  ],
 }
