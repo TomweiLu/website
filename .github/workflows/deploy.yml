@@ -32,7 +32,7 @@ jobs:
           DEPLOY_REMOTE_PATH: ${{ secrets.DEPLOY_REMOTE_PATH }}
         run: |
           rsync -avz --delete \
-            -e "ssh -p $DEPLOY_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=no" \
+            -e "ssh -p $DEPLOY_PORT -i ~/.ssh/id_rsa -o StrictHostKeyChecking=yes" \
             ./osaka_pulse/ \
             "$DEPLOY_USER@$DEPLOY_HOST:$DEPLOY_REMOTE_PATH"
 
