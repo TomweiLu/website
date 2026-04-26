@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx tailwindcss -i ./osaka_pulse/css/input.css -o ./osaka_pulse/css/output.css --minify"
+    "build": "npx tailwindcss -i ./osaka_pulse/css/input.css -o ./osaka_pulse/css/style.css --minify"
   },
   "repository": {
     "type": "git",
